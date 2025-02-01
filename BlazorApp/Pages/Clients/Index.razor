@@ -16,9 +16,10 @@ else
 			<tr>
 				<th>ID</th>
 				<th>Name</th>
+				<th>Age</th>
+				<th>Education</th>
 				<th>Email</th>
 				<th>Phone</th>
-				<th>Status</th>
 				<th>Created At</th>
 				<th>Action</th>
 			</tr>
@@ -29,9 +30,10 @@ else
 				<tr>
 					<td>@client.Id</td>
 					<td>@(client.FirstName + " " + client.LastName)</td>
+					<td>@client.Age</td>
+					<td>@client.Education</td>
 					<td>@client.Email</td>
 					<td>@client.Phone</td>
-					<td>@client.Status</td>
 					<td>@client.CreatedAt.ToShortDateString()</td>
 					<td style="white-space:nowrap">
 						<a class="btn btn-primary btn-sm" href="/Clients/Edit/@client.Id">Edit</a>

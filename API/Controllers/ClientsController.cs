@@ -1,6 +1,5 @@
 ﻿using API.Models;
 using API.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -49,10 +48,11 @@ namespace API.Controllers
             {
                 FirstName = clientDto.FirstName,
                 LastName = clientDto.LastName,
+                Age = clientDto.Age,
+                Education = clientDto.Education,
                 Email = clientDto.Email,
                 Phone = clientDto.Phone?? "",
                 Address = clientDto.Address ?? "",
-                Status = clientDto.Status,
                 CreatedAt = DateTime.Now,
             };
 
@@ -81,10 +81,11 @@ namespace API.Controllers
 
             client.FirstName = clientDto.FirstName;
             client.LastName = clientDto.LastName;
+            client.Age = clientDto.Age;
+            client.Education = clientDto.Education;
             client.Email = clientDto.Email;
             client.Phone = clientDto.Phone ?? "";
             client.Address = clientDto.Address ?? "";
-            client.Status = clientDto.Status;
 
             context.SaveChanges();
 

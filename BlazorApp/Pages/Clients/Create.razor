@@ -22,6 +22,27 @@
 		</div>
 
 		<div class="row mb-3">
+			<label class="col-md-4 col-form-label">Age</label>
+			<div class="col-md-8">
+				<input type="number" class="form-control" @bind="ClientData.Age" />
+				<span class="text-danger">@Errors["Age"]?[0]</span>
+			</div>
+		</div>
+
+		<div class="row mb-3">
+			<label class="col-md-4 col-form-label">Education</label>
+			<div class="col-md-8">
+				<select class="form-select" @bind="ClientData.Education">
+					<option value="High School">High School</option>
+					<option value="Bachelor">Bachelor</option>
+					<option value="Master">Master</option>
+					<option value="PhD">PhD</option>
+				</select>
+				<span class="text-danger">@Errors["Education"]?[0]</span>
+			</div>
+		</div>
+
+		<div class="row mb-3">
 			<label class="col-md-4 col-form-label">Email</label>
 			<div class="col-md-8">
 				<input class="form-control" @bind="ClientData.Email" />
@@ -42,20 +63,6 @@
 			<div class="col-md-8">
 				<input class="form-control" @bind="ClientData.Address" />
 				<span class="text-danger">@Errors["Address"]?[0]</span>
-			</div>
-		</div>
-
-		<div class="row mb-3">
-			<label class="col-md-4 col-form-label">Status</label>
-			<div class="col-md-8">
-				<select class="form-select" @bind="ClientData.Status">
-					<option value="New">New</option>
-					<option value="Parmanent">Parmanent</option>
-					<option value="Lead">Lead</option>
-					<option value="Occasional">Occasional</option>
-					<option value="Inactive">Inactive</option>
-				</select>
-				<span class="text-danger">@Errors["Status"]?[0]</span>
 			</div>
 		</div>
 
