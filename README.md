@@ -21,14 +21,22 @@ The following NuGet packages are used in this project:
 ## Authentication and Authorization
 Authentication and authorization are implemented at the start of the project. **Swagger** is used for API documentation and testing purposes.
 
-## UI Screenshots
-Below are the screenshots showcasing the UI of the application:
+## UI view
 
+### List of Clients
 ![List of Clients](./assets/listOfClients.png)
+
+### Create Client
 ![Create Client](./assets/createClient.png)
+
+### Edit Client
 ![Edit Client](./assets/editClient.png)
+
+### Delete Client
 ![Delete Client](./assets/deleteClient.png)
-![swagger View](./assets/swaggerView.png)
+
+### Swagger View
+![Swagger View](./assets/swaggerView.png)
 ---
 
 > **Note**: To run the project, ensure that you have the required .NET SDK installed and run both the API and BlazorApp projects simultaneously.
